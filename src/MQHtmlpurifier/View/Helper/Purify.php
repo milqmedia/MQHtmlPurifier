@@ -1,6 +1,6 @@
 <?php
 
-namespace DevmonkHtmlpurifier\View\Helper;
+namespace MQHtmlpurifier\View\Helper;
 
 use Zend\Http\Request;
 use Zend\View\Helper\AbstractHelper;

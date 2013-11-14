@@ -1,6 +1,6 @@
 <phpunit bootstrap="../Bootstrap.php" colors="true" backupGlobals="false">
     <testsuites>
-        <testsuite name="DevmonkHtmlpurifier Test Suite">
+        <testsuite name="MQHtmlpurifier Test Suite">
             <directory>./</directory>
         </testsuite>
     </testsuites>
@@ -16,7 +16,7 @@
         </blacklist>
         -->
         <whitelist>
-            <directory suffix=".php">../../src/DevmonkHtmlpurifier</directory>
+            <directory suffix=".php">../../src/MQHtmlpurifier</directory>
         <!--
             <exclude>
                 <directory suffix=".phtml">view</directory>

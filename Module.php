@@ -1,6 +1,6 @@
 <?php
 
-namespace DevmonkHtmlpurifier;
+namespace MQHtmlPurifier;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\Loader\AutoloaderFactory;
@@ -9,7 +9,7 @@ use Zend\ModuleManager\Feature\BootstrapListenerInterface;
 use Zend\EventManager\EventInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\ViewHelperProviderInterface;
-use DevmonkHtmlpurifier\View\Helper\Purify;
+use MQHtmlpurifier\View\Helper\Purify;
 use Zend\ModuleManager\Feature\ServiceProviderInterface;
 
 class Module implements
@@ -20,7 +20,7 @@ class Module implements
     ServiceProviderInterface
 {
     const SERVICE_NAME            = 'purifier';
-    const CONFIG_KEY_HTMLPURIFIER = 'devmonkhtmlpurifier';
+    const CONFIG_KEY_HTMLPURIFIER = 'mqhtmlpurifier';
     const CONFIG_KEY_CONFIG       = 'config';
     const HTMLPURIFIER_PREFIX     = 'HTMLPURIFIER_PREFIX';
 
@@ -91,19 +91,6 @@ class Module implements
             'factories' => array(
                 'purify' => $purifyClosure,
             ),
-        );
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getServiceConfig()
-    {
-        return array(
-            'aliases'   => array(),
-            'factories' => array(
-                'ZfcTwigEnvironment' => 'DevmonkHtmlpurifier\Service\EnvironmentFactory',
-            )
         );
     }
 }

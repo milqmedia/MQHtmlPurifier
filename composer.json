@@ -1,5 +1,5 @@
 {
-    "name": "devmonk/htmlpurifier",
+    "name": "milqmedia/htmlpurifier",
     "type": "library",
     "description": "Zend Framework 2 module that provides complete integration of HTMLPurifier library",
     "keywords": [
@@ -11,19 +11,12 @@
         "malicious",
         "xss",
         "filter",
-        "twig"
     ],
-    "homepage": "https://github.com/devmonkcom/htmlpurifier",
+    "homepage": "https://github.com/milqmedia/MQHtmlPurifier",
     "license": "LGPL v 2.1+",
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*"
-    },
-    "require-dev": {
-        "zf-commons/zfc-twig": "dev-master"
-    },
-    "suggest": {
-        "zf-commons/zfc-twig": "Provides full twig system for zf2 applications. This package provides a 'purify' filter for twig templates."
     },
     "autoload": {
         "classmap": [

@@ -1,7 +1,7 @@
 <?php
 
-use DevmonkHtmlpurifier\View\Helper\Purify;
-use DevmonkHtmlpurifier\Module;
+use MQHtmlpurifier\View\Helper\Purify;
+use MQHtmlpurifier\Module;
 
 class PurifyTest extends \PHPUnit_Framework_TestCase
 {

@@ -224,8 +224,5 @@ return array(
     'HTMLPurifier_Printer_HTMLDefinition'                => __DIR__ . '/src/HTMLPurifier/library/HTMLPurifier/Printer/HTMLDefinition.php',
     'HTMLPurifier_Printer_CSSDefinition'                 => __DIR__ . '/src/HTMLPurifier/library/HTMLPurifier/Printer/CSSDefinition.php',
     'HTMLPurifier'                                       => __DIR__ . '/src/HTMLPurifier/library/HTMLPurifier.php',
-    'DevmonkHtmlpurifier\Twig\Filter'                    => __DIR__ . '/src/DevmonkHtmlpurifier/Twig/Filter.php',
-    'DevmonkHtmlpurifier\Twig\Extension'                 => __DIR__ . '/src/DevmonkHtmlpurifier/Twig/Extension.php',
-    'DevmonkHtmlpurifier\Service\EnvironmentFactory'     => __DIR__ . '/src/DevmonkHtmlpurifier/Service/EnvironmentFactory.php',
-    'DevmonkHtmlpurifier\View\Helper\Purify'             => __DIR__ . '/src/DevmonkHtmlpurifier/View/Helper/Purify.php',
+    'MQHtmlpurifier\View\Helper\Purify'             	 => __DIR__ . '/src/MQHtmlpurifier/View/Helper/Purify.php',
 );
