@@ -225,4 +225,5 @@ return array(
     'HTMLPurifier_Printer_CSSDefinition'                 => __DIR__ . '/src/HTMLPurifier/library/HTMLPurifier/Printer/CSSDefinition.php',
     'HTMLPurifier'                                       => __DIR__ . '/src/HTMLPurifier/library/HTMLPurifier.php',
     'MQHtmlpurifier\View\Helper\Purify'             	 => __DIR__ . '/src/MQHtmlpurifier/View/Helper/Purify.php',
+    'MQHtmlpurifier\Controller\Plugin\Purify'          	 => __DIR__ . '/src/MQHtmlpurifier/Controller/Plugin/Purify.php',
 );
