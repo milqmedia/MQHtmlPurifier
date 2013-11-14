@@ -10,7 +10,7 @@
         "module",
         "malicious",
         "xss",
-        "filter",
+        "filter"
     ],
     "homepage": "https://github.com/milqmedia/MQHtmlPurifier",
     "license": "LGPL v 2.1+",
