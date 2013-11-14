@@ -93,4 +93,12 @@ class Module implements
             ),
         );
     }
+    
+     /**
+     * {@inheritDoc}
+     */
+    public function getServiceConfig()
+    {
+    	return array();
+    }	
 }
