@@ -9,8 +9,7 @@ use Zend\ModuleManager\Feature\BootstrapListenerInterface;
 use Zend\EventManager\EventInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\ViewHelperProviderInterface;
-use MQHtmlpurifier\View\Helper\Purify as PurifyView;
-use MQHtmlpurifier\Controller\Plugin\Purify as PurifyController;
+use MQHtmlpurifier\View\Helper\Purify;
 use Zend\ModuleManager\Feature\ServiceProviderInterface;
 
 class Module implements
@@ -76,28 +75,7 @@ class Module implements
      */
     public function getConfig()
     {
-    	$purifyClosure = function ($sm) {
-            $locator = $sm->getServiceLocator();
-            return new PurifyController($locator->get(self::SERVICE_NAME));
-        };
-        
-    	$config = array(
-    		'controller_plugins' => array(
-			    'invokables' => array(
-			       'purify' => $purifyClosure,
-			     )
-			),
-		);
-		
-	    $configFiles = array(
-	        __DIR__ . '/config/module.config.php',
-	    );
-	    
-	    foreach($configFiles as $configFile) {
-	        $config = \Zend\Stdlib\ArrayUtils::merge($config, include $configFile);
-	    }
-	    
-	    return $config;
+        return include __DIR__ . '/config/module.config.php';
     }
 
     /**
@@ -107,7 +85,7 @@ class Module implements
     {
         $purifyClosure = function ($sm) {
             $locator = $sm->getServiceLocator();
-            return new PurifyView($locator->get(self::SERVICE_NAME));
+            return new Purify($locator->get(self::SERVICE_NAME));
         };
         return array(
             'factories' => array(
