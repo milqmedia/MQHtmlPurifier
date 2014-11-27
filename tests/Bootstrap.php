@@ -1,4 +1,15 @@
 <?php
+
+/**
+ * MQHtmlPurifier
+ * Copyright (c) 2014 Milq Media.
+ *
+ * @author      Johan Kuijt <johan@milq.nl>
+ * @copyright   2014 Milq Media.
+ * @license     http://www.opensource.org/licenses/mit-license.php  MIT License
+ * @link        http://milq.nl
+ */
+ 
 use Zend\Mvc\Application;
 chdir(__DIR__ .'/../'); // chdir() to application root
 require 'vendor/autoload.php';

@@ -1,12 +1,13 @@
-# mq-htmlpurifier
+# MQHtmlPurifier
 
-mq-htmlpurifier is a module that integrates the [mq-htmlpurifier](http://htmlpurifier.org/) filter library with
+MQHtmlPurifier is a module that integrates the [HTMLPurifier](http://htmlpurifier.org/) filter library with
 [Zend Framework 2](http://framework.zend.com).
 
 
 ## Installation
- 1. Add `"milqmedia/htmlpurifier": "dev-master"` to your `composer.json` file and run `php composer.phar update`.
- 2. Add `mq-htmlpurifier` to your `config/application.config.php` file under the `modules` key.
+ 1. Add `"repositories": [ { "type": "vcs", "url": "https://github.com/milqmedia/MQHtmlPurifier" }]` to your `composer.json` file.
+ 2. Add `"milqmedia/mq-htmlpurifier": "dev-master"` to your `composer.json` file and run `php composer.phar update`.
+ 3. Add `MQHtmlPurifier` to your `config/application.config.php` file under the `modules` key.
 
 
 ## Configuration
