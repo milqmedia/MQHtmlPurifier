@@ -1,0 +1,15 @@
+<phpunit bootstrap="Bootstrap.php" colors="true" syntaxCheck="true" verbose="true" backupGlobals="false">
+    <testsuites>
+        <testsuite name="MQHtmlpurifier Test Suite">
+            <directory>./</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../src/MQHtmlpurifier</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="testdox-text" target="php://stdout"/>
+    </logging>
+</phpunit>

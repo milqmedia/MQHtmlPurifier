@@ -1,5 +1,4 @@
 <?php
-
 /**
  * MQHtmlPurifier
  * Copyright (c) 2014 Milq Media.
@@ -31,7 +30,7 @@ class PurifyTest extends \PHPUnit_Framework_TestCase
         $this->sut = new Purify($this->mockPurifier);
     }
 
-    public function testSetPurifierGetsCalledOnInvode()
+    public function testSetPurifierGetsCalledOnInvoke()
     {
         // ----------------------------------------------------------------
         // setup test parameters
