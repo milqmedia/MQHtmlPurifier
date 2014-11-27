@@ -1,5 +1,7 @@
 # MQHtmlPurifier
 
+[![Build Status](https://travis-ci.org/milqmedia/mq-htmlpurifier.svg?branch=master)](https://travis-ci.org/milqmedia/mq-htmlpurifier)
+
 MQHtmlPurifier is a module that integrates the [HTMLPurifier](http://htmlpurifier.org/) filter library with
 [Zend Framework 2](http://framework.zend.com).
 
