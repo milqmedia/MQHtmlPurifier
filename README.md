@@ -5,7 +5,7 @@ mq-htmlpurifier is a module that integrates the [mq-htmlpurifier](http://htmlpur
 
 
 ## Installation
- 1. Add `"milqmedia/mq-htmlpurifier": "dev-master"` to your `composer.json` file and run `php composer.phar update`.
+ 1. Add `"milqmedia/htmlpurifier": "dev-master"` to your `composer.json` file and run `php composer.phar update`.
  2. Add `mq-htmlpurifier` to your `config/application.config.php` file under the `modules` key.
 
 
