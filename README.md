@@ -23,3 +23,4 @@ MQHtmlPurifier has sane defaults out of the box but offers optional configuratio
 ## Fork
 
 This module is a fork of [DevmonkHtmlPurifier](https://github.com/DevMonkCom/devmonk-htmlpurifier) by DevMonkCom. Updated, changed and enhanced by Milq Media.
+
