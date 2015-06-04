@@ -1,6 +1,5 @@
 {
     "name": "milqmedia/htmlpurifier",
-    "type": "library",
     "description": "Zend Framework 2 module that provides complete integration of HTMLPurifier library",
     "keywords": [
         "zf2",
