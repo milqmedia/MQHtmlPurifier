@@ -16,23 +16,27 @@ use Zend\Mvc\Controller\Plugin\AbstractPlugin;
 
 class Purify extends AbstractPlugin
 {
+	private $purifier;
+	
+	public function __construct($purifier) {
+		
+		$this->purifier = $purifier;
+	}
     /**
      * @param string $data
      *
      * @return string
      */
     public function __invoke($data)
-    {        
-    	$purifier = $this->getController()->getServiceLocator()->get('purifier');
-    	
+    {            	
         if (is_string($data)) {
             
-            $data = $purifier->purify($data);
+            $data = $this->purifier->purify($data);
             
         } else if (is_array($data)) {
             
-            array_walk_recursive($data, function(&$value, $key) use ($purifier) {
-                $value = $purifier->purify($value);
+            array_walk_recursive($data, function(&$value, $key) {
+                $value = $this->purifier->purify($value);
             });
             
         }
