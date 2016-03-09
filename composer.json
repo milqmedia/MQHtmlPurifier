@@ -14,8 +14,7 @@
     "homepage": "https://github.com/milqmedia/mq-htmlpurifier",
     "license": "LGPL v 2.1+",
     "require": {
-        "php": ">=5.3.3",
-        "zendframework/zendframework": "2.*"
+        "php": ">=5.3.3"
     },
     "autoload": {
         "classmap": [
