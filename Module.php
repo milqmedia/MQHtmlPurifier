@@ -93,13 +93,9 @@ class Module implements
      */
     public function getViewHelperConfig()
     {
-        $purifyClosure = function ($sm) {
-            $locator = $sm->getServiceLocator();
-            return new Purify($locator->get(self::SERVICE_NAME));
-        };
         return array(
             'factories' => array(
-                'purify' => $purifyClosure,
+                'purify' => 'MQHtmlpurifier\Controller\Plugin\Purify',
             ),
         );
     }
