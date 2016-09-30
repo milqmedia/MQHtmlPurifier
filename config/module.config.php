@@ -20,9 +20,7 @@ return array(
 		'invokables' => array(
 		),
 		'factories' => array(
-			'purify' => function($serviceLocator) {
-				return new \MQHtmlpurifier\Controller\Plugin\Purify($serviceLocator->getServiceLocator()->get('purifier'));
-			}
+			'purify' => 'MQHtmlpurifier\Controller\Plugin\Purify',
 		)
 	),
 );
