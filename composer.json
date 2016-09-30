@@ -15,6 +15,7 @@
     "license": "LGPL v 2.1+",
     "require": {
         "php": ">=5.3.3"
+         "zendframework/zendframework": "2.*"
     },
     "autoload": {
         "classmap": [
