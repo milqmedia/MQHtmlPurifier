@@ -9,12 +9,24 @@
  * @license     http://www.opensource.org/licenses/mit-license.php  MIT License
  * @link        http://milq.nl
  */
- 
+
 namespace MQHtmlpurifier\Controller\Plugin;
 
 use Zend\Mvc\Controller\Plugin\AbstractPlugin;
+use Zend\ServiceManager\ServiceLocatorInterface;
+use Zend\ServiceManager\FactoryInterface;
 
-class Purify extends AbstractPlugin
+class Purify implements FactoryInterface
+{
+    public function createService(ServiceLocatorInterface $serviceLocator)
+    {
+        $purifier = $serviceLocator->getServiceLocator()->get('purifier');
+
+        return new PurifyProxy($purifier);
+    }
+}
+
+final class PurifyProxy extends AbstractPlugin
 {
 	private $purifier;
 	
