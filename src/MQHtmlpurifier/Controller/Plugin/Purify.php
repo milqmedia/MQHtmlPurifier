@@ -18,11 +18,16 @@ use Zend\ServiceManager\FactoryInterface;
 
 class Purify implements FactoryInterface
 {
-    public function createService(ServiceLocatorInterface $serviceLocator)
+    public function __invoke(\Interop\Container\ContainerInterface $container, $requestedName, array $options = NULL)
     {
-        $purifier = $serviceLocator->getServiceLocator()->get('purifier');
+        $purifier = $container->get('MQAuth\Service\AuthUtil');
 
         return new PurifyProxy($purifier);
+    }
+    
+    public function createService(ServiceLocatorInterface $services)
+    {
+        return $this($services, 'Purify');
     }
 }
 
