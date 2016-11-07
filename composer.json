@@ -1,6 +1,6 @@
 {
     "name": "milqmedia/htmlpurifier",
-    "description": "Zend Framework 2 module that provides complete integration of HTMLPurifier library",
+    "description": "Zend Framework 3 module that provides complete integration of HTMLPurifier library",
     "keywords": [
         "zf2",
         "htmlpurifier",
@@ -14,8 +14,8 @@
     "homepage": "https://github.com/milqmedia/mq-htmlpurifier",
     "license": "LGPL v 2.1+",
     "require": {
-        "php": ">=5.3.3",
-         "zendframework/zendframework": "2.*"
+        "php": ">=7.0",
+         "zendframework/zendframework": "^3.0"
     },
     "autoload": {
         "classmap": [
