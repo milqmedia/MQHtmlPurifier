@@ -20,7 +20,7 @@ class Purify implements FactoryInterface
 {
     public function __invoke(\Interop\Container\ContainerInterface $container, $requestedName, array $options = NULL)
     {
-        $purifier = $container->get('MQAuth\Service\AuthUtil');
+        $purifier = $container->get('purifier');
 
         return new PurifyProxy($purifier);
     }
